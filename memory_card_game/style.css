@@ -1,0 +1,41 @@
+/*#grid{
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 300px;
+
+}*/
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 20px;
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(4, 100px); /* 4 sütunlu grid */
+    grid-gap: 10px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+#grid img {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    transition: transform 0.2s;
+}
+
+#grid img:hover {
+    transform: scale(1.05);
+}
